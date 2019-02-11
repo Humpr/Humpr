@@ -1,0 +1,22 @@
+.container {
+    height: 4em;
+    width: 4em;
+}
+
+.input {
+    height: 0.1px;
+    width: 0.1px;
+    opacity: 0.0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.label {
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 4em;
+    width: 4em;
+    background-color: #dddfe7;
+}
