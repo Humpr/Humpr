@@ -13,10 +13,21 @@
 }
 
 .label {
+    box-sizing: border-box;
+    border: 0px solid #69b9f3;
     border-radius: 100%;
     cursor: pointer;
     display: block;
     height: 4em;
     width: 4em;
-    background-color: #dddfe7;
+    background-image: url("./upload_icon.png");
+    background-size: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.label:hover {
+    height: calc(4em - 2px);
+    width: calc(4em - 2px);
+    border: 2px solid #69b9f3;
+    background-color: #69b9f3;
 }
