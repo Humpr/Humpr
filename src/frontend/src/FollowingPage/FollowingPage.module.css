@@ -1,0 +1,40 @@
+.container {
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+.showMyConvoyButton {
+    font-size: 2em;
+    line-height: 6rem;
+    text-align: center;
+    width: 6rem;
+    box-sizing: border-box;
+}
+
+.Following {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 6em;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MyConvoy {
+    width: 6rem;
+}
+
+.Feed {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 6em;
+}
