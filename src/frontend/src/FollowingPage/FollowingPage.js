@@ -8,7 +8,7 @@ class FollowingPage extends Component {
             <div className={style.container}>
                 <header className={style.header}>
                     <div className={style.showMyConvoyButton}>&#9776;</div>
-                    <div className={style.Following}>following</div>
+                    <div className={style.Following}>Stories</div>
                 </header>
                 <main className={style.main}>
                     <MyConvoy className={style.MyConvoy}/>
