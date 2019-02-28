@@ -8,7 +8,7 @@ import "./App.css";
 class App extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Header></Header>
                 <Main>
                     <Switch>
@@ -19,7 +19,7 @@ class App extends Component {
                         <Route path="/following" component={FollowingPage} />
                     </Switch>
                 </Main>
-            </div>
+            </React.Fragment>
         );
     }
 }
