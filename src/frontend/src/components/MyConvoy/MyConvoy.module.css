@@ -28,7 +28,7 @@
 
 .convoyProfile.busy {
     border: 4px solid #ffa5a5;
-    filter: opacity(0.8);
+    opacity: 0.8;
 }
 
 .convoyProfileContainer {
