@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import style from "./FollowingPage.module.css";
 import MyConvoy from "../components/MyConvoy/MyConvoy";
 import Stories from "../components/Stories/Stories";
+import Feed from "../components/Feed/Feed";
 
 class FollowingPage extends Component {
     render() {
@@ -13,7 +14,7 @@ class FollowingPage extends Component {
                 </header>
                 <main className={style.main}>
                     <MyConvoy className={style.MyConvoy}/>
-                    <div className={style.Feed}>feed</div>
+                    <Feed className={style.Feed}/>
                 </main>
             </div>
         );

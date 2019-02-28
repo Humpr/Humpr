@@ -37,5 +37,10 @@
 .Feed {
     flex-grow: 1;
     text-align: center;
-    line-height: 6em;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#69baf4+0,915cf1+100 */
+    background: #69baf4; /* Old browsers */
+    background: -moz-linear-gradient(top, #69baf4 0%, #915cf1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #69baf4 0%,#915cf1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #69baf4 0%,#915cf1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69baf4', endColorstr='#915cf1',GradientType=0 ); /* IE6-9 */
 }
