@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import style from "./FollowingPage.module.css";
 import MyConvoy from "../components/MyConvoy/MyConvoy";
+import Stories from "../components/Stories/Stories";
 
 class FollowingPage extends Component {
     render() {
@@ -8,7 +9,7 @@ class FollowingPage extends Component {
             <div className={style.container}>
                 <header className={style.header}>
                     <div className={style.showMyConvoyButton}>&#9776;</div>
-                    <div className={style.Following}>Stories</div>
+                    <Stories className={style.Following}/>
                 </header>
                 <main className={style.main}>
                     <MyConvoy className={style.MyConvoy}/>

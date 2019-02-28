@@ -21,6 +21,7 @@
     flex-grow: 1;
     text-align: center;
     line-height: 6em;
+    display: flex;
 }
 
 .main {
