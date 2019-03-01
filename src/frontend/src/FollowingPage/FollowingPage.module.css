@@ -35,6 +35,9 @@
 }
 
 .Feed {
+    padding: 0 6vw;
+    box-sizing: border-box;
+    width: calc(100% - 12vw);
     flex-grow: 1;
     text-align: center;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#69baf4+0,915cf1+100 */
