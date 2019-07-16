@@ -1,0 +1,27 @@
+.crown{/*Only appears on the trending page*/
+    background-image: url("https://maxcdn.icons8.com/Color/PNG/512/Messaging/crown-512.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: 33px;
+    left: 30px;
+    z-index: 0;
+  }
+
+  @media only screen and (max-width: 500px){
+    .crown{
+      background-image: url("https://maxcdn.icons8.com/Color/PNG/512/Messaging/crown-512.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      bottom: 33px;
+      left: 30px;
+      z-index: 0;
+    }
+  }
