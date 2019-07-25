@@ -33,6 +33,20 @@
   }
 /*all external fonts are placed above*/
 
+::-webkit-scrollbar{
+  background-color: none;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f2727cb4ae824ded0371e/fe697bb0210049755319eba974248fef/Logo_final_HUMPR_final.png");
+  background-size: 10px;
+  max-width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dedede;
+}
+
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -760,7 +774,6 @@ html, body{
 
 #save_to_button{
   width: 20%;
-  height: 30px;
   background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/d56afe642bd9a53cc5be457339c9e1f4/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0120).png");
   background-position: center;
   background-repeat: no-repeat;
@@ -769,12 +782,14 @@ html, body{
 #save_to_button button{
     border: none;
     width: 100%;
-    height: 30px;
     background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/dd556f565d16b831750fa18df79681d5/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0000).png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #dedede;
+    border-right: #c8c8c8 double 1px ;
+    border-left: #c8c8c8 double 1px ;
+    border-radius: 3px;
 }
 @keyframes fadeOut {
   from {opacity: 1;}
@@ -795,38 +810,39 @@ html, body{
 .saveButtonClick button{
     background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/d56afe642bd9a53cc5be457339c9e1f4/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0120).png") !important;
     background-color: #f5f5f5 !important;
+    border: none !important;
   }
 
 
 
   #reHump{
     width: 20%;
-    height: 30px;
-    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/5e0ef9f9f8cf54e00230b21330b52fb0/Re-Hump_(0030).png");
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/ee19f9ae21465e809da3ea0a07ee9e11/Re-Hump_(0030).png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 60% 200%;
-    background-color: #dedede;
+    background-color: whitesmoke;
   }
   #reHump button{
       border: none;
       width: 100%;
-      height: 30px;
-      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/bd25ec670ec170169e927d067064eb60/Re-Hump_(0000).png");
+      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/0b0e84e68e75b217c33da04efa0c1fb8/Re-Hump_(0000).png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 60% 200%;
       background-color: #dedede;
+      border-right: #c8c8c8 double 1px ;
+      border-left: #c8c8c8 double 1px ;
+      border-radius: 3px;
   }
   .reHumpButtonClick button:focus{
     animation: fadeOut 1.043s ease 1.043s 1 normal forwards;
-    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/a0a9ddbb5e8d718285aafb61d5e3a5a2/Re-Hump_2.gif") !important;
-    background-color: #dedede !important;
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/3c56465d30b6de7715c2a397d7adf5fd/Re-Hump_4.gif") !important;
+    background-color: white !important;
   }
   
   .reHumpButtonClick button{
-      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/5e0ef9f9f8cf54e00230b21330b52fb0/Re-Hump_(0030).png") !important;
-      background-color: #dedede !important;
+      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/ee19f9ae21465e809da3ea0a07ee9e11/Re-Hump_(0030).png") !important;
+      background-color: whitesmoke !important;
+      border: none !important;
     }
 
 

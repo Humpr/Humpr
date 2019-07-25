@@ -1224,3 +1224,338 @@
     z-index: 1;
     display: none;
   }
+
+
+  #artistProfilePreview_postID_01{
+    z-index: 3;
+    display: flex;
+    height: 5%;
+    max-height: 52px; 
+    width: auto;
+    min-height: 50px;
+    margin: 3%;
+    background-color: whitesmoke;
+    border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_01:hover{
+  transform: scale(1.1,1.1);
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_01 {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_01::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #67BEF4;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_01:active {
+  cursor: pointer;
+  color: white;
+}
+
+#artistProfilePreview_postID_01:active::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_01 {
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  
+}
+
+#artistProfilePreview_postID_01::after {
+  content: '';
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.534);
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  width: 1.25em;
+  transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_01:hover{
+    overflow: hidden;
+}
+#artistProfilePreview_postID_01:hover::after {
+  transition: transform 0.45s ease-in-out;
+  transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+  #artistProfilePreview_postID_01, #onlineStatus, #offlineStatus, #inactiveStatus{
+    border-radius: 50%;
+  }
+}
+
+#featuredPostsPreview_postID_01{
+  z-index: 2;
+  padding: 1%;
+  max-width: 600px;
+  height: auto;
+  max-height: 1920px;
+  position: relative;
+  background-color: white;
+  left: 235px;
+  bottom: 50px;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_01{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; top: -9999px; left: -9999px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+#artistProfilePreview_postID_02{
+  z-index: 3;
+  display: flex;
+  height: 5%;
+  max-height: 52px; 
+  width: auto;
+  min-height: 50px;
+  margin: 3%;
+  background-color: whitesmoke;
+  border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_02:hover{
+transform: scale(1.1,1.1);
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_02 {
+position: relative;
+overflow: hidden;
+transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_02::before {
+content: '';
+z-index: -1;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 1em;
+height: 1em;
+border-radius: 50%;
+background-color: #67BEF4;
+transform-origin: center;
+transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_02:active {
+cursor: pointer;
+color: white;
+}
+
+#artistProfilePreview_postID_02:active::before {
+transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_02 {
+position: relative;
+font-size: inherit;
+font-family: inherit;
+cursor: pointer;
+
+}
+
+#artistProfilePreview_postID_02::after {
+content: '';
+z-index: -1;
+background-color: hsla(0, 0%, 100%, 0.534);
+position: absolute;
+top: -50%;
+bottom: -50%;
+width: 1.25em;
+transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_02:hover{
+  overflow: hidden;
+}
+#artistProfilePreview_postID_02:hover::after {
+transition: transform 0.45s ease-in-out;
+transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+#artistProfilePreview_postID_02, #onlineStatus, #offlineStatus, #inactiveStatus{
+  border-radius: 50%;
+}
+}
+
+#featuredPostsPreview_postID_02{
+z-index: 2;
+padding: 1%;
+max-width: 600px;
+height: auto;
+max-height: 1920px;
+position: relative;
+background-color: white;
+left: 235px;
+bottom: 50px;
+border-radius: 0px 5px 5px 5px;
+display: none;
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_02{
+visibility: hidden;
+opacity: 0;
+position: absolute; top: -9999px; left: -9999px;
+display: block;
+}
+
+
+
+
+
+
+
+
+#artistProfilePreview_postID_03{
+  z-index: 3;
+  display: flex;
+  height: 5%;
+  max-height: 52px; 
+  width: auto;
+  min-height: 50px;
+  margin: 3%;
+  background-color: whitesmoke;
+  border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_03:hover{
+transform: scale(1.1,1.1);
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_03 {
+position: relative;
+overflow: hidden;
+transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_03::before {
+content: '';
+z-index: -1;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 1em;
+height: 1em;
+border-radius: 50%;
+background-color: #67BEF4;
+transform-origin: center;
+transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_03:active {
+cursor: pointer;
+color: white;
+}
+
+#artistProfilePreview_postID_03:active::before {
+transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_03 {
+position: relative;
+font-size: inherit;
+font-family: inherit;
+cursor: pointer;
+
+}
+
+#artistProfilePreview_postID_03::after {
+content: '';
+z-index: -1;
+background-color: hsla(0, 0%, 100%, 0.534);
+position: absolute;
+top: -50%;
+bottom: -50%;
+width: 1.25em;
+transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_03:hover{
+  overflow: hidden;
+}
+#artistProfilePreview_postID_03:hover::after {
+transition: transform 0.45s ease-in-out;
+transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+#artistProfilePreview_postID_03, #onlineStatus, #offlineStatus, #inactiveStatus{
+  border-radius: 50%;
+}
+}
+
+#featuredPostsPreview_postID_03{
+z-index: 2;
+padding: 1%;
+max-width: 600px;
+height: auto;
+max-height: 1920px;
+position: relative;
+background-color: white;
+left: 235px;
+bottom: 50px;
+border-radius: 0px 5px 5px 5px;
+display: none;
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_03{
+visibility: hidden;
+opacity: 0;
+position: absolute; top: -9999px; left: -9999px;
+display: block;
+}
+
+.postSampleExample{
+  display:none;
+  width:100%;
+}

@@ -166,3 +166,20 @@
                 $("#emoteMenu_postID_08").slideToggle("fast");
             });
         });
+
+
+        $(document).ready(function(){
+            $("#artistProfilePreview_postID_01").hover(function(){
+                $("#featuredPostsPreview_postID_01").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#artistProfilePreview_postID_02").hover(function(){
+                $("#featuredPostsPreview_postID_02").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#artistProfilePreview_postID_03").hover(function(){
+                $("#featuredPostsPreview_postID_03").slideToggle("slow");
+            });
+        });

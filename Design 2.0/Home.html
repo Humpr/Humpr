@@ -2,10 +2,10 @@
 <html lang="en">
 
     <head>
-        <title>Humpr Discover</title>
+        <title>Humpr Home</title>
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
         <!--linked stylesheets include a reset sheet, a custom fonts sheet, a site-wide sheet and a page-specific sheet.-->
-        <link rel="stylesheet" href="./Discover_Stylesheet.css">
+        <link rel="stylesheet" href="./Home_Stylesheet.css">
         <link rel="stylesheet" href="./Site_wide_Stylesheet.css">
         <link rel="stylesheet" href="./reset_stylesheet.css">
         <link rel="stylesheet" href="./postExamples_stylesheet.css">
@@ -55,11 +55,20 @@
             });
         });
         
+
         $(document).ready(function(){
-            $("#artistProfilePreview").hover(function(){
-                $("#featuredPostsPreview").slideToggle("slow");
+                $("#save_to_button").click(function(){
+                    $("#save_to_button").addClass("saveButtonClick");
+                });
             });
-        });
+
+            $(document).ready(function(){
+                $("#reHump").click(function(){
+                    $("#reHump").addClass("reHumpButtonClick");
+                });
+            });
+
+        
         </script>      
 
         <script src="E:\Federico\FilesGo\projects\Humpr\Experimental\Design 2.0\postExamples_Scripts.js"></script>
@@ -97,8 +106,8 @@
             </div>
         </header>
         <div class="tab_menu">
-            <button class="menu_button" id="home_button"><a target="_self" href="file:///E:/Federico/FilesGo/projects/Humpr/Experimental/Design%202.0/Home.html">Home</a></button> <!--Must make link real when available-->
-            <button class="menu_button" id="discover_button"><h1>Discover</h1></button>
+            <button class="menu_button" id="discover_button"><a target="_self" href="file:///E:/Federico/FilesGo/projects/Humpr/Experimental/Design%202.0/Discover.html">Discover</a></button> <!--Must make link real when available-->
+            <button class="menu_button" id="home_button"><h1>Home</h1></button>
             <button class="menu_button" id="trending_button"><a target="_self" href="file:///E:/Federico/FilesGo/projects/Humpr/Experimental/Design%202.0/Trending.html">Trending</a></button> <!--Must make link real when available-->
         </div>
         <div class="finances_header">              
@@ -134,103 +143,48 @@
             </div>
         </div>
         <!--end of headers, start of posts-->
+        <div class="storiesContainer">
+            <h1 class="storiesTitle">Stories:</h1>
+            <div class="addStory"></div>
+                <div class="mainStoryContainer"><div class="storyBorder unseen"></div><div class="storyCircle"></div></div> 
+                <div class="mainStoryContainer"><div class="storyBorder seen"></div><div class="storyCircle"></div></div> 
+        </div>
         <div class="generalContainer">
-        <div class="rowDiscoverArtists"> <!--Post organizers-->
-                <div class="columnDiscoverArtists">
+        <div class="rowfollowedArtists"> <!--Post organizers-->
+                <div class="columnfollowedArtists">
                     
-                    <div class="discoverArtists">
-                        <h1 class="discoverArtistsTitle">Artists you might like</h1>
+                    <div class="followedArtists">
+                        <h1 class="followedArtistsTitle">Artists you follow</h1>
                         <div class="artistProfilePreviewContainer">
-                        <div id="artistProfilePreview">
+                            <div id="artistProfilePreview">
                                 <div class="profile_picture" id="onlineStatus"></div>
                                 <div class="artistInfo">
                                     <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
                                     <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
                                 </div>
-                        </div>
-                        <div id="featuredPostsPreview">
-                                <div class="featuredPostsGallery">
-                                        <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                        <img class="postSample" src="https://picsum.photos/420/650.jpg">
-                                        <img class="postSample" src="https://picsum.photos/1080/720.jpg">
-                                        <img class="postSample" src="https://picsum.photos/420.jpg">
-                                        <img class="postSample" src="https://picsum.photos/640.jpg">
-                                        <script>
-                                                /*Script for sample galleries, adapted from https://www.w3schools.com/*/
-                                                var myIndex = 0;
-                                                carousel();
-                                                
-                                                function carousel() {
-                                                  var i;
-                                                  var x = document.getElementsByClassName("postSample");
-                                                  for (i = 0; i < x.length; i++) {
-                                                    x[i].style.display = "none";  
-                                                  }
-                                                  myIndex++;
-                                                  if (myIndex > x.length) {myIndex = 1}    
-                                                  x[myIndex-1].style.display = "block";  
-                                                  setTimeout(carousel, 2000); // Change image every 2 seconds
-                                                }
-                                        </script>
-                                        <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
-                                </div>
-                        </div>
+                            </div>
 
-                        <!--example artists-->
-                        <div id="artistProfilePreview_postID_01">
-                            <div class="profile_picture" id="onlineStatus"></div>
-                            <div class="artistInfo">
-                                <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
-                                <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                            <div id="artistProfilePreview">
+                                <div class="profile_picture" id="onlineStatus"></div>
+                                <div class="artistInfo">
+                                    <div class="artistUsername"><h1 class="userName">natoque</h1> <h1 class="artistSpecialty">Makes Duis</h1></div>
+                                    <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                                </div>
                             </div>
-                    </div>
-                    <div id="featuredPostsPreview_postID_01">
-                            <div class="featuredPostsGallery">
-                                    <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/420.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/640.jpg">
-                                    
-                                    <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
+                            <div id="artistProfilePreview">
+                                <div class="profile_picture" id="inactiveStatus"></div>
+                                <div class="artistInfo">
+                                    <div class="artistUsername"><h1 class="userName">penatibus</h1> <h1 class="artistSpecialty">Makes Animations</h1></div>
+                                    <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                                </div>
                             </div>
-                    </div>
-                        <div id="artistProfilePreview_postID_02">
-                            <div class="profile_picture" id="inactiveStatus"></div>
-                            <div class="artistInfo">
-                                <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
-                                <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                            <div id="artistProfilePreview">
+                                <div class="profile_picture" id="offlineStatus"></div>
+                                <div class="artistInfo">
+                                    <div class="artistUsername"><h1 class="userName">magnis</h1> <h1 class="artistSpecialty">Makes Lacus</h1></div>
+                                    <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                                </div>
                             </div>
-                    </div>
-                    <div id="featuredPostsPreview_postID_02">
-                            <div class="featuredPostsGallery">
-                                    <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/420.jpg">
-                                    <img class="postSampleExample" src="https://picsum.photos/640.jpg">
-                                    
-                                    <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
-                            </div>
-                    </div>
-                    <div id="artistProfilePreview_postID_03">
-                        <div class="profile_picture" id="offlineStatus"></div>
-                        <div class="artistInfo">
-                            <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
-                            <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
-                        </div>
-                </div>
-                <div id="featuredPostsPreview_postID_03">
-                        <div class="featuredPostsGallery">
-                                <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
-                                <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
-                                <img class="postSampleExample" src="https://picsum.photos/420.jpg">
-                                <img class="postSampleExample" src="https://picsum.photos/640.jpg">
-                                
-                                <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
-                        </div>
-                </div>
                         </div>
                         
                     </div>
@@ -269,7 +223,8 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#fun #music #original #norom</h2></div>
-                                    <div class="postDiscoveryButtons">                                 <div class="likedButton"><button></button></div>                                 <div class="dislikedButton"><button></button></div>                             </div>
+                                    <div id="reHump"><button></button></div>
+                                    <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
         
@@ -299,10 +254,8 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                    <div class="postDiscoveryButtons">
-                                        <div class="likedButton"><button></button></div>
-                                        <div class="dislikedButton"><button></button></div>
-                                    </div>
+                                    <div id="reHump"><button></button></div>
+                                    <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
                             
@@ -332,7 +285,8 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                    <div class="postDiscoveryButtons">                                 <div class="likedButton"><button></button></div>                                 <div class="dislikedButton"><button></button></div>                             </div>
+                                    <div id="reHump"><button></button></div>
+                                    <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
 
@@ -367,7 +321,7 @@
     
                             <div class="post_footer">
                                 <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                             </div>
                         </div>
 
@@ -397,7 +351,7 @@
     
                             <div class="post_footer">
                                 <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                             </div>
                         </div>
 
@@ -427,7 +381,7 @@
     
                             <div class="post_footer">
                                 <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                             </div>
                         </div>
 
@@ -463,7 +417,7 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                    <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
 
@@ -493,7 +447,7 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                    <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
 
@@ -523,7 +477,7 @@
         
                                 <div class="post_footer">
                                     <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
-                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                    <div id="reHump"><button></button></div>                                     <div id="save_to_button"><button></button></div>
                                 </div>
                             </div>
                                 
